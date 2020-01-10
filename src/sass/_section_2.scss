@@ -1,0 +1,86 @@
+
+#section_2{
+    @extend %box2;
+    background:$font_color_bg;
+    height: 686px;
+    .content{
+        @extend %box1;
+        li{
+            transition: 0.3s;
+        }
+        li:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 -2px 5px 1px #ccc;
+        }
+    }
+    .top{//标题
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 58px;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 100;
+        a{
+            text-decoration: none;
+        }
+        .lookall{//更多
+            font-size: 18px;
+            color:$font_color_gary;
+            height: 30px;
+            line-height: 30px;
+        }
+        .lookall:hover{
+            color:$font_color_orange;
+            transition: 0.2s;
+        }
+    }
+    .phone-adv{//左侧广告
+        float: left;
+        img{
+            width: 234px;
+            height: 614px;
+        }
+    }
+    ul{//右侧商品列表
+        float: right;
+        width: 992px;
+        li:nth-child(-n+4){
+            margin-bottom: 14px;
+        }
+        li{
+            width: 234px;
+            height: 300px;
+            padding: 20px 0;
+            background: $font_color_white;
+            float: left;
+            margin-left: 14px;
+            text-align: center;
+            font-size: $font_size + 2;
+        }
+        a{
+            text-decoration: none!important;
+        }
+        img{
+            width: 160px;
+            height: 160px;
+            margin: 0 37px 21px
+        }
+        h3{
+            color: #333;
+            height: 20px;
+            @include ellipsis(true);
+        }
+        .title{
+            margin-bottom:16px;
+            color: $font_color_gary;
+        }
+        .xianjia{
+            color: #fa6509;
+        }
+        .yuanjia{
+            text-decoration: line-through;
+            color:$font_color_gary;
+        }
+    }
+}

@@ -17,7 +17,7 @@ $colors:(a:#ead,b:#df3,c:#6d2,d:#3fc,e:#937,f:#d50,g:#4c9);
 }
 
 
-%box1{//居中
+%box1{//??
     width:$page_width;
     height: 100px;
     margin: 0 auto;
@@ -32,6 +32,8 @@ $colors:(a:#ead,b:#df3,c:#6d2,d:#3fc,e:#937,f:#d50,g:#4c9);
 @import "adv1";
 @import "section_1";
 @import "adv";
+@import "section_2";
+@import "main";
 
 *{
     box-sizing: border-box;
@@ -47,22 +49,6 @@ $colors:(a:#ead,b:#df3,c:#6d2,d:#3fc,e:#937,f:#d50,g:#4c9);
 }
 
 
-
-
-#section_2{
-    @extend %box1;
-    background: map-get($colors,d);
-}
-
-.ad{
-    width: 100px;
-    height: 100px;
-    background: red;
-}
-#section_3{
-    @extend %box1;
-    background: map-get($colors,d);
-}
 
 #section_4{
     @extend %box1;
