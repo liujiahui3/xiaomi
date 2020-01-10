@@ -36,7 +36,7 @@
         }
     }
     a{
-        @include inline-block(inline-block, middle);
+        @include inline-block(middle);
         height: 40px;
         line-height: 40px;
         color:$font_color_gary;
@@ -47,7 +47,7 @@
         color:$font_color_white;
     }
     span{
-        @include inline-block(inline-block, middle);
+        @include inline-block(middle);
         color: #424242;
         margin: 0 2px;
     }

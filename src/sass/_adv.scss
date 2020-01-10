@@ -1,0 +1,8 @@
+.adv{
+    @extend %box2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 164px;
+    background: $font_color_bg;
+}

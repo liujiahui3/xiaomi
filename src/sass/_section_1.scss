@@ -5,7 +5,7 @@
     .content{
         @extend %box1;
     }
-    .top{
+    .top{//标题
         height: 60px;
         .title{
             float: left;
@@ -17,7 +17,7 @@
             font-weight:100;
         }
     }
-    .button{
+    .button{//上一页下一页按钮
         float: right;
         width: 72px;
         height: 24px;
@@ -31,9 +31,101 @@
             height: 24px;
             line-height: 24px;
             text-align: center;
+            color: $font_color_gary;
+            transition: 0.2s;
+        }
+        :hover{
+            color: $font_color_orange;
         }
         .icon-fenye-xiayiye{
             margin-left: -1px;
+        }
+    }
+    .daojishi{
+        width: 234px;
+        height: 340px;
+        background: #f1eded;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid red;
+        img{
+            margin: 30px 0;
+        }
+        p{
+            color: $font_color_gary;
+            margin-bottom: 20px;
+        }
+        
+        span:nth-child(2n-1){
+            @include inline-block(middle);
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            background: #605751;
+        }
+        span:nth-child(2n){
+            @include inline-block(middle);
+            width: 5px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 24px;
+        }
+    }
+    .changci{
+        text-align: center;
+        font-size: 20px;
+        color: #ef3a3b;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: row;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 978px;
+        height: 340px;
+        margin-left: 14px;
+        overflow: hidden;
+        a{
+            display: flex;
+            flex-direction: column;
+            width: 234px;
+            height: 340px;
+            background: #fff;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin-right: 14px;
+            @include bordertop(#6d3);
+        }
+        img{
+            width: 160px;
+            height: 160px;
+            margin: 0 37px 22px;
+        }
+        h3{
+            color: #333;
+            width: 190px;
+            height: 20px;
+            font-size: $font_size+2;
+            @include ellipsis(true);
+        }
+        .title{
+            font-size: $font_size;
+            margin-bottom:16px;
+            color: $font_color_gary;
+        }
+        .xianjia{
+            color: #fa6509;
+        }
+        .yuanjia{
+            text-decoration: line-through;
+            color:$font_color_gary;
         }
     }
 }
