@@ -1,0 +1,88 @@
+#header{
+    background: #333;
+    .center{//左边列表
+        width: $page_width;
+        height: 40px;
+        margin: 0 auto;
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+            margin-right: 20px;
+        } 
+    }
+    .cart{//购物车入口
+        float: right;
+        width:120px;
+        text-align: center;
+        background: #424242;
+        position: relative;
+        i{
+            color: $font_color_gary;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+        }
+        .goods{
+            display: none;
+            width: 316px;
+            background: white;
+            position: absolute;
+            top:40px;
+            right: 0;
+            line-height: 100px;
+            text-align: center;
+        }
+    }
+    a{
+        @include inline-block(inline-block, middle);
+        height: 40px;
+        line-height: 40px;
+        color:$font_color_gary;
+        font-size: $font_size - 2;
+        text-decoration: none;
+    }
+    a:hover{
+        color:$font_color_white;
+    }
+    span{
+        @include inline-block(inline-block, middle);
+        color: #424242;
+        margin: 0 2px;
+    }
+    .erweima{//下载二维码
+        position: relative;
+        >div{
+            // display: none;
+            width: 124px;
+            height: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 40px;
+            left: -34px;
+            padding: 17px;
+            background: $font_color_white;
+            img{
+                width: 90px;
+                height: 90px;
+                display: block;
+            }
+            .sanjiao{
+                width: 0;
+                height: 0;
+                border-width:10px ;
+                border-style: solid;
+                border-color: transparent transparent $font_color_white transparent;
+                position: absolute;
+                top: -20px;
+                left:50px
+            }
+            span{
+                color: #333;
+                font-size: $font_size+2;
+                text-align: center;
+            }
+        }
+    }
+}

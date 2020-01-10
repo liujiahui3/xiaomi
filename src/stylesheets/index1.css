@@ -1,0 +1,391 @@
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/index1.scss */
+#adv1, #section_1 .content, #nav, #lunbot, .adv, #section_2, #section_3, #section_4, #section_5, #section_6, #section_7, #section_8 {
+  width: 1226px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+/* line 19, ../sass/index1.scss */
+#section_1, #section_9 {
+  width: 100%;
+  height: 100px;
+}
+
+/* line 1, ../sass/_header.scss */
+#header {
+  background: #333;
+}
+/* line 3, ../sass/_header.scss */
+#header .center {
+  width: 1226px;
+  height: 40px;
+  margin: 0 auto;
+}
+/* line 7, ../sass/_header.scss */
+#header .center .left {
+  float: left;
+}
+/* line 10, ../sass/_header.scss */
+#header .center .right {
+  float: right;
+  margin-right: 20px;
+}
+/* line 15, ../sass/_header.scss */
+#header .cart {
+  float: right;
+  width: 120px;
+  text-align: center;
+  background: #424242;
+  position: relative;
+}
+/* line 21, ../sass/_header.scss */
+#header .cart i {
+  color: #b0b0b0;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+/* line 27, ../sass/_header.scss */
+#header .cart .goods {
+  display: none;
+  width: 316px;
+  background: white;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  line-height: 100px;
+  text-align: center;
+}
+/* line 38, ../sass/_header.scss */
+#header a {
+  display: inline-block;
+  vertical-align: inline-block;
+  *vertical-align: middle;
+  *zoom: 1;
+  *display: inline;
+  height: 40px;
+  line-height: 40px;
+  color: #b0b0b0;
+  font-size: 10px;
+  text-decoration: none;
+}
+/* line 46, ../sass/_header.scss */
+#header a:hover {
+  color: #fff;
+}
+/* line 49, ../sass/_header.scss */
+#header span {
+  display: inline-block;
+  vertical-align: inline-block;
+  *vertical-align: middle;
+  *zoom: 1;
+  *display: inline;
+  color: #424242;
+  margin: 0 2px;
+}
+/* line 54, ../sass/_header.scss */
+#header .erweima {
+  position: relative;
+}
+/* line 56, ../sass/_header.scss */
+#header .erweima > div {
+  width: 124px;
+  height: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  left: -34px;
+  padding: 17px;
+  background: #fff;
+}
+/* line 66, ../sass/_header.scss */
+#header .erweima > div img {
+  width: 90px;
+  height: 90px;
+  display: block;
+}
+/* line 71, ../sass/_header.scss */
+#header .erweima > div .sanjiao {
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  top: -20px;
+  left: 50px;
+}
+/* line 81, ../sass/_header.scss */
+#header .erweima > div span {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* line 1, ../sass/_adv1.scss */
+#adv1 {
+  height: 170px;
+  margin: 14px auto;
+}
+/* line 5, ../sass/_adv1.scss */
+#adv1 i {
+  width: 26px;
+  height: 25px;
+  margin: 0 26px;
+  text-align: center;
+}
+/* line 12, ../sass/_adv1.scss */
+#adv1 .iconfont {
+  font-size: 24px;
+}
+/* line 15, ../sass/_adv1.scss */
+#adv1 li:hover a {
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 19, ../sass/_adv1.scss */
+#adv1 li:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+/* line 23, ../sass/_adv1.scss */
+#adv1 li {
+  float: left;
+  width: 76px;
+  height: 85px;
+  padding: 20px 3px;
+  position: relative;
+}
+/* line 29, ../sass/_adv1.scss */
+#adv1 li > a {
+  font-size: 14px;
+  margin-top: 10px;
+  width: 75px;
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+/* line 39, ../sass/_adv1.scss */
+#adv1 li::before {
+  content: "";
+  width: 64px;
+  display: block;
+  height: 1px;
+  background: #665e57;
+  margin-left: 5px;
+  position: absolute;
+  top: 0;
+}
+/* line 49, ../sass/_adv1.scss */
+#adv1 li::after {
+  content: "";
+  height: 64px;
+  display: block;
+  width: 1px;
+  margin-top: 8px;
+  background: #665e57;
+  position: absolute;
+  top: 0;
+}
+/* line 59, ../sass/_adv1.scss */
+#adv1 .miaosha {
+  width: 234px;
+  height: 170px;
+  float: left;
+  background: #5f5750;
+}
+/* line 65, ../sass/_adv1.scss */
+#adv1 .cc9_note8_sh4 {
+  float: right;
+}
+/* line 67, ../sass/_adv1.scss */
+#adv1 .cc9_note8_sh4 a {
+  display: block;
+  float: left;
+  margin-left: 15px;
+}
+/* line 72, ../sass/_adv1.scss */
+#adv1 .cc9_note8_sh4 img {
+  width: 316px;
+  height: 170px;
+}
+/* line 77, ../sass/_adv1.scss */
+#adv1 a:first-child {
+  margin-left: 0;
+}
+
+/* line 1, ../sass/_section_1.scss */
+#section_1 {
+  background: #f5f5f5;
+  height: 400px;
+}
+/* line 8, ../sass/_section_1.scss */
+#section_1 .top {
+  height: 60px;
+}
+/* line 10, ../sass/_section_1.scss */
+#section_1 .top .title {
+  float: left;
+}
+/* line 13, ../sass/_section_1.scss */
+#section_1 .top h2 {
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
+  font-weight: 100;
+}
+/* line 20, ../sass/_section_1.scss */
+#section_1 .button {
+  float: right;
+  width: 72px;
+  height: 24px;
+  margin-top: 24px;
+}
+/* line 25, ../sass/_section_1.scss */
+#section_1 .button i {
+  width: 36px;
+  height: 24px;
+  display: block;
+  float: left;
+  border: 1px solid #ccc;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+/* line 35, ../sass/_section_1.scss */
+#section_1 .button .icon-fenye-xiayiye {
+  margin-left: -1px;
+}
+
+/* line 28, ../sass/index1.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 31, ../sass/index1.scss */
+#nav {
+  background: #df3;
+}
+
+/* line 36, ../sass/index1.scss */
+#lunbot {
+  background: #937;
+}
+
+/* line 42, ../sass/index1.scss */
+.adv {
+  background: #937;
+}
+
+/* line 47, ../sass/index1.scss */
+#section_2 {
+  background: #3fc;
+}
+
+/* line 52, ../sass/index1.scss */
+.ad {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+/* line 57, ../sass/index1.scss */
+#section_3 {
+  background: #3fc;
+}
+
+/* line 62, ../sass/index1.scss */
+#section_4 {
+  background: #d50;
+}
+
+/* line 67, ../sass/index1.scss */
+#section_5 {
+  background: #4c9;
+}
+
+/* line 72, ../sass/index1.scss */
+#section_6 {
+  background: #ead;
+}
+
+/* line 77, ../sass/index1.scss */
+#section_7 {
+  background: #df3;
+}
+
+/* line 82, ../sass/index1.scss */
+#section_8 {
+  background: #6d2;
+}
+
+/* line 87, ../sass/index1.scss */
+#section_9 {
+  background: #3fc;
+}

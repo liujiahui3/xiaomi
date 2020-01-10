@@ -1,0 +1,80 @@
+#adv1{
+    @extend %box1;
+    height: 170px;
+    margin:14px auto;
+    i{
+        width: 26px;
+        height: 25px;
+        margin: 0 26px;
+        text-align: center;
+    }
+    // background: map-get($colors,c);
+    .iconfont{
+        font-size: 24px;
+    }
+    li:hover a{
+        color: $font_color_white;
+        transition: 0.5s;
+    }
+    li:hover{
+        color: $font_color_white;
+        transition: 0.5s;
+    }
+    li{//小米秒杀
+        float: left;
+        width: 76px;
+        height: 85px;
+        padding: 20px 3px;
+        position: relative;
+        >a{
+            font-size: $font_size+2;
+            margin-top: 10px;
+            width: 75px;
+            color: #aaa;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+    }
+    li::before{
+        content: "";
+        width: 64px;
+        display: block;
+        height: 1px;
+        background:#665e57;
+        margin-left: 5px;
+        position: absolute;
+        top: 0;
+    }
+    li::after{
+        content: "";
+        height: 64px;
+        display: block;
+        width: 1px;
+        margin-top: 8px;
+        background:#665e57;
+        position: absolute;
+        top: 0;
+    }
+    .miaosha{
+        width: 234px;
+        height: 170px;
+        float: left;
+        background: #5f5750;
+    }
+    .cc9_note8_sh4{//3个广告位
+        float: right;
+        a{
+            display: block;
+            float: left;
+            margin-left: 15px;
+        }
+        img{
+            width: 316px;
+            height: 170px;
+        }
+    }
+    a:first-child{
+        margin-left:0;
+    }
+}

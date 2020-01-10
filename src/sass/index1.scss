@@ -1,0 +1,91 @@
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/css3";
+
+$page_width:1226px;
+$page_container:100%;
+$font_color_gary:#b0b0b0;
+$font_color_white:#fff;
+$font_size:12px;
+
+$colors:(a:#ead,b:#df3,c:#6d2,d:#3fc,e:#937,f:#d50,g:#4c9);
+
+%box1{//居中
+    width:$page_width;
+    height: 100px;
+    margin: 0 auto;
+}
+
+%box2{//100%
+    width:$page_container;
+    height: 100px;
+}
+
+@import "header";
+@import "adv1";
+@import "section_1";
+
+*{
+    box-sizing: border-box;
+}
+#nav{
+    @extend %box1;
+    background: map-get($colors,b);
+}
+
+#lunbot{
+    @extend %box1;
+    background: map-get($colors,e);
+}
+
+
+.adv{
+    @extend %box1;
+    background: map-get($colors,e);
+}
+
+#section_2{
+    @extend %box1;
+    background: map-get($colors,d);
+}
+
+.ad{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+#section_3{
+    @extend %box1;
+    background: map-get($colors,d);
+}
+
+#section_4{
+    @extend %box1;
+    background: map-get($colors,f);
+}
+
+#section_5{
+    @extend %box1;
+    background: map-get($colors,g);
+}
+
+#section_6{
+    @extend %box1;
+    background: map-get($colors,a);
+}
+
+#section_7{
+    @extend %box1;
+    background: map-get($colors,b);
+}
+
+#section_8{
+    @extend %box1;
+    background: map-get($colors,c);
+}
+
+#section_9{
+    @extend %box2;
+    background: map-get($colors,d);
+}
+
