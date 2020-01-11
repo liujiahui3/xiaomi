@@ -249,20 +249,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 100%;
   color: #333;
 }
-/* line 51, ../sass/_nav.scss */
+/* line 50, ../sass/_nav.scss */
+#nav .nav-list li:hover {
+  color: #ff6700;
+}
+/* line 54, ../sass/_nav.scss */
 #nav form {
   width: 296px;
   height: 50px;
   position: relative;
 }
-/* line 52, ../sass/_nav.scss */
+/* line 55, ../sass/_nav.scss */
 #nav form input {
   outline: none;
   border: 0;
   border: 1px solid #b0b0b0;
   background: transparent;
 }
-/* line 61, ../sass/_nav.scss */
+/* line 64, ../sass/_nav.scss */
 #nav form input[type="submit"] {
   width: 50px;
   height: 50px;
@@ -271,12 +275,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   right: 0;
   cursor: pointer;
 }
-/* line 69, ../sass/_nav.scss */
+/* line 72, ../sass/_nav.scss */
 #nav form input[type="text"] {
   width: 247px;
   height: 50px;
 }
-/* line 73, ../sass/_nav.scss */
+/* line 76, ../sass/_nav.scss */
 #nav form .iconfont {
   display: block;
   width: 50px;
@@ -291,13 +295,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   transition: 0.3s;
 }
-/* line 87, ../sass/_nav.scss */
+/* line 90, ../sass/_nav.scss */
 #nav form div:hover .iconfont {
   background: #ff6700;
   border-color: #ff6700;
   color: #fff;
 }
-/* line 92, ../sass/_nav.scss */
+/* line 95, ../sass/_nav.scss */
 #nav form span {
   display: block;
   position: absolute;
@@ -312,35 +316,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.3s;
   cursor: pointer;
 }
-/* line 106, ../sass/_nav.scss */
+/* line 109, ../sass/_nav.scss */
 #nav form span:last-child {
   left: 150px;
 }
-/* line 109, ../sass/_nav.scss */
+/* line 112, ../sass/_nav.scss */
 #nav form span:hover {
   color: #fff;
   background: #ff6700;
 }
-/* line 114, ../sass/_nav.scss */
+/* line 117, ../sass/_nav.scss */
 #nav .nav-good {
   background: #fff;
   width: 100%;
-  height: 201px;
   border-top: 1px solid #b0b0b0;
   box-shadow: 0 3px 5px 1px #ccc;
-  display: none;
-}
-/* line 121, ../sass/_nav.scss */
-#nav .nav-good .nav-goods-content {
-  width: 1226px;
-  margin: 0 auto;
   position: absolute;
   top: 101px;
   left: 0;
   z-index: 10;
+}
+/* line 126, ../sass/_nav.scss */
+#nav .nav-good .nav-goods-content {
+  width: 1226px;
+  margin: 0 auto;
+  display: none;
   background: #fff;
 }
-/* line 130, ../sass/_nav.scss */
+/* line 132, ../sass/_nav.scss */
 #nav .nav-good li {
   width: 204px;
   height: 201px;
@@ -349,25 +352,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   text-align: center;
 }
-/* line 138, ../sass/_nav.scss */
+/* line 140, ../sass/_nav.scss */
 #nav .nav-good a {
   text-decoration: none;
 }
-/* line 141, ../sass/_nav.scss */
+/* line 143, ../sass/_nav.scss */
 #nav .nav-good img {
   width: 160px;
   height: 110px;
 }
-/* line 145, ../sass/_nav.scss */
+/* line 147, ../sass/_nav.scss */
 #nav .nav-good .title {
   color: #333;
 }
-/* line 148, ../sass/_nav.scss */
+/* line 150, ../sass/_nav.scss */
 #nav .nav-good .price {
   color: #ff6700;
 }
-/* line 151, ../sass/_nav.scss */
-#nav .nav-good li:after {
+/* line 153, ../sass/_nav.scss */
+#nav .nav-good li:nth-child(-n+5):after {
   content: ' ';
   width: 1px;
   height: 100px;
