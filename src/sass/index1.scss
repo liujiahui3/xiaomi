@@ -16,7 +16,6 @@ $colors:(a:#ead,b:#df3,c:#6d2,d:#3fc,e:#937,f:#d50,g:#4c9);
     border-top: $style $width $color;
 }
 
-
 %box1{//??
     width:$page_width;
     height: 100px;
@@ -29,54 +28,29 @@ $colors:(a:#ead,b:#df3,c:#6d2,d:#3fc,e:#937,f:#d50,g:#4c9);
 }
 
 @import "header";
+@import "nav";
 @import "adv1";
 @import "section_1";
 @import "adv";
 @import "section_2";
 @import "main";
+@import "footer";
+@import "section_8";
 
 *{
     box-sizing: border-box;
 }
-#nav{
-    @extend %box1;
-    background: map-get($colors,b);
+
+.clear::after{
+    content: ' ';
+    display: block;
+    overflow: hidden;
+    height: 0;
+    visibility: hidden;
+    clear: both;
 }
 
 #lunbot{
     @extend %box1;
     background: map-get($colors,e);
 }
-
-
-
-#section_4{
-    @extend %box1;
-    background: map-get($colors,f);
-}
-
-#section_5{
-    @extend %box1;
-    background: map-get($colors,g);
-}
-
-#section_6{
-    @extend %box1;
-    background: map-get($colors,a);
-}
-
-#section_7{
-    @extend %box1;
-    background: map-get($colors,b);
-}
-
-#section_8{
-    @extend %box1;
-    background: map-get($colors,c);
-}
-
-#section_9{
-    @extend %box2;
-    background: map-get($colors,d);
-}
-

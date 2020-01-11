@@ -1,0 +1,143 @@
+#footer{
+    @extend %box2;
+    height: 272px;
+    .foot{
+        margin: 0 auto;
+        width: 1226px;
+    }
+    .screw{//预约维修,退货等
+        padding: 27px 0;
+        border-bottom: 1px solid $font_color_gary;
+        a:hover{
+            color: $font_color_orange;
+            .iconfont{
+                color:$font_color_orange ;
+            }
+        }
+        a{
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .iconfont{//小图标
+            font-size: 24px;
+            color: #333;
+            transition: 0.3s;
+        }
+        li{
+            float: left;
+            width: 20%;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border-right: 1px solid $font_color_gary;
+        }
+        li:last-child{
+            border: 0;
+        }
+    }
+    .helper{//帮助,服务,门店等
+        padding: 40px 0;
+        ul{
+            float: left;
+            width: 160px;
+            font-size: $font_size;
+            color: #333;
+            
+            a:hover{
+                color: $font_color_orange;
+            }
+        }
+        a{
+            color: #757575;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        li:first-child{
+            margin-top: 30px;
+        }
+        li{
+            height: 18px;
+            margin: 5px 0;
+        }
+    }
+    .customer-service{//人工客服
+        float: right;
+        height: 112px;
+        width: 251px;
+        border-left: 1px solid $font_color_gary;
+        text-align: center;
+        h3{
+            font-size: 22px;
+            color: $font_color_orange;
+        }
+        p{
+            font-size: $font_size;
+            color: #616161;
+            margin-top: 5px;
+        }
+        a{
+            width: 120px;
+            height: 28px;
+            text-align: center;
+            line-height: 28px;
+            color: $font_color_orange;
+            border: 1px solid $font_color_orange;
+            font-size: $font_size;
+            margin: 20px auto;
+            display: block;
+        }
+        a:hover{
+            color: #fff;
+            background: $font_color_orange;
+        }
+    }
+}
+
+#pageFoot{
+    @extend %box2;
+    height: 250px;
+    background: #fafafa;
+    padding: 30px 0;
+    .content{
+        width: 1226px;
+        margin: 0 auto;
+    }
+    .logo{
+        position: absolute;
+        background: $font_color_orange;
+        height: 57px;
+        height: 57px;
+    }
+    span{
+        font-size: $font_size;
+    }
+    a{
+        @include inline-block(middle);
+        color: #868686;
+        font-size: $font_size;
+        text-decoration: none;
+    }
+    a:hover{
+        color: $font_color_orange;
+    }
+    p{
+        margin-left: 60px;
+        font-size: $font_size;
+        color: #868686;
+    }
+    img{
+        height: 28px;
+    }
+    .wangzhan{
+        margin-left: 60px;
+    }
+    .tanshuo{
+        height: 20px;
+        width: 267px;
+        font-size: $font_size +2;
+        background: url(../images/fashao.png)no-repeat;
+        margin: 50px auto 0;
+    }
+}

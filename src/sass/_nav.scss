@@ -1,0 +1,5 @@
+
+#nav{
+    @extend %box1;
+    background: map-get($colors,b);
+}
