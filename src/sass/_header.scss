@@ -19,6 +19,10 @@
         text-align: center;
         background: #424242;
         position: relative;
+        span{
+            color: $font_color_gary;
+            margin-top: -2px;
+        }
         i{
             color: $font_color_gary;
             height: 40px;

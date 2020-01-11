@@ -30,6 +30,7 @@ $colors:(a:#ead,b:#df3,c:#6d2,d:#3fc,e:#937,f:#d50,g:#4c9);
 @import "header";
 @import "nav";
 @import "adv1";
+@import "lunbot";
 @import "section_1";
 @import "adv";
 @import "section_2";
@@ -50,7 +51,4 @@ $colors:(a:#ead,b:#df3,c:#6d2,d:#3fc,e:#937,f:#d50,g:#4c9);
     clear: both;
 }
 
-#lunbot{
-    @extend %box1;
-    background: map-get($colors,e);
-}
+

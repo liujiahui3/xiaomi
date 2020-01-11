@@ -1,5 +1,161 @@
 
 #nav{
-    @extend %box1;
-    background: map-get($colors,b);
+    @extend %box2;
+    position: relative;
+    .content{
+        @extend %box1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{//----logo----
+        overflow: hidden;
+        background: $font_color_orange;
+        width: 55px;
+        height: 55px;
+        text-indent: -9999px;
+        position: relative;
+        img{
+            position: absolute;
+            top:0;
+            width: 100%;
+            transition: 0.3s;
+        }
+        img:first-child{
+            left: -100%;
+        }
+        img:last-child{
+            left: 0;
+        }
+    }
+    .logo:hover{
+        img:first-child{
+            left: 0;
+        }
+        img:last-child{
+            left: 100%;
+        }
+    }
+    .nav-list{//导航的列表
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        li{
+            padding: 0 5px;
+            height: 100%;
+            color: #333;
+        }
+    }
+    form{//搜索框
+        input{
+            outline: none;
+            border: 0;
+            border: 1px solid $font_color_gary;
+            background: transparent;
+        }
+        width: 296px;
+        height: 50px;
+        position: relative;
+        input[type="submit"]{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+        input[type="text"]{
+            width: 247px;
+            height: 50px;
+        }
+        .iconfont{
+            display: block;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 50px;
+            color:#333 ;
+            text-align: center;
+            transition: 0.3s;
+        }
+        div:hover .iconfont{
+            background: $font_color_orange;
+            border-color:$font_color_orange;
+            color: $font_color_white;
+        }
+        span{
+            display: block;
+            position: absolute;
+            top: 15px;
+            left: 60px;
+            font-size: $font_size;
+            color: #333;
+            background: #eee;
+            height: 18px;
+            padding: 0 5px;
+            line-height: 18px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        span:last-child{
+            left: 150px;
+        }
+        span:hover{
+            color: $font_color_white;
+            background: $font_color_orange;
+        }
+    }
+    .nav-good{//下拉的商品列表
+        background: $font_color_white;
+        width: 100%;
+        height: 201px;
+        border-top: 1px solid $font_color_gary;
+        box-shadow: 0 3px 5px 1px #ccc;
+        display: none;
+        .nav-goods-content{
+            width: 1226px;
+            margin: 0 auto;
+            position: absolute;
+            top: 101px;
+            left: 0;
+            z-index: 10;
+            background: $font_color_white;
+        }
+        li{
+            width: 204px;
+            height: 201px;
+            padding: 35px 12px 0;
+            float: left;
+            position: relative;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            width: 160px;
+            height: 110px;
+        }
+        .title{
+            color: #333;
+        }
+        .price{
+            color: $font_color_orange;
+        }
+        li:after{
+            content:' ';
+            width: 1px;
+            height: 100px;
+            background: #eee;
+            position: absolute;
+            top: 35px;
+            right: 0;
+        }
+    }
 }

@@ -64,14 +64,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 19, ../sass/index1.scss */
-#nav, #adv1, #section_1 .content, #section_2 .content, .section_3 .content, #section_8 .content, #section_8 ul, #lunbot {
+#nav .content, #adv1, #lunbot, #section_1 .content, #section_2 .content, .section_3 .content, #section_8 .content, #section_8 ul {
   width: 1226px;
   height: 100px;
   margin: 0 auto;
 }
 
 /* line 25, ../sass/index1.scss */
-#section_1, .adv, #section_2, .section_3, #footer, #pageFoot, #section_8 {
+#nav, #section_1, .adv, #section_2, .section_3, #footer, #pageFoot, #section_8 {
   width: 100%;
   height: 100px;
 }
@@ -105,13 +105,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
 }
 /* line 22, ../sass/_header.scss */
+#header .cart span {
+  color: #b0b0b0;
+  margin-top: -2px;
+}
+/* line 26, ../sass/_header.scss */
 #header .cart i {
   color: #b0b0b0;
   height: 40px;
   line-height: 40px;
   font-size: 16px;
 }
-/* line 28, ../sass/_header.scss */
+/* line 32, ../sass/_header.scss */
 #header .cart .goods {
   display: none;
   width: 316px;
@@ -122,7 +127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 100px;
   text-align: center;
 }
-/* line 39, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 #header a {
   display: inline-block;
   vertical-align: middle;
@@ -135,11 +140,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 10px;
   text-decoration: none;
 }
-/* line 47, ../sass/_header.scss */
+/* line 51, ../sass/_header.scss */
 #header a:hover {
   color: #fff;
 }
-/* line 50, ../sass/_header.scss */
+/* line 54, ../sass/_header.scss */
 #header span {
   display: inline-block;
   vertical-align: middle;
@@ -149,11 +154,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #424242;
   margin: 0 2px;
 }
-/* line 55, ../sass/_header.scss */
+/* line 59, ../sass/_header.scss */
 #header .erweima {
   position: relative;
 }
-/* line 57, ../sass/_header.scss */
+/* line 61, ../sass/_header.scss */
 #header .erweima > div {
   width: 124px;
   height: 0;
@@ -164,13 +169,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 17px;
   background: #fff;
 }
-/* line 67, ../sass/_header.scss */
+/* line 71, ../sass/_header.scss */
 #header .erweima > div img {
   width: 90px;
   height: 90px;
   display: block;
 }
-/* line 72, ../sass/_header.scss */
+/* line 76, ../sass/_header.scss */
 #header .erweima > div .sanjiao {
   width: 0;
   height: 0;
@@ -181,7 +186,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: -20px;
   left: 50px;
 }
-/* line 82, ../sass/_header.scss */
+/* line 86, ../sass/_header.scss */
 #header .erweima > div span {
   color: #333;
   font-size: 14px;
@@ -190,7 +195,186 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 2, ../sass/_nav.scss */
 #nav {
-  background: #df3;
+  position: relative;
+}
+/* line 5, ../sass/_nav.scss */
+#nav .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 12, ../sass/_nav.scss */
+#nav .logo {
+  overflow: hidden;
+  background: #ff6700;
+  width: 55px;
+  height: 55px;
+  text-indent: -9999px;
+  position: relative;
+}
+/* line 19, ../sass/_nav.scss */
+#nav .logo img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: 0.3s;
+}
+/* line 25, ../sass/_nav.scss */
+#nav .logo img:first-child {
+  left: -100%;
+}
+/* line 28, ../sass/_nav.scss */
+#nav .logo img:last-child {
+  left: 0;
+}
+/* line 33, ../sass/_nav.scss */
+#nav .logo:hover img:first-child {
+  left: 0;
+}
+/* line 36, ../sass/_nav.scss */
+#nav .logo:hover img:last-child {
+  left: 100%;
+}
+/* line 40, ../sass/_nav.scss */
+#nav .nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* line 45, ../sass/_nav.scss */
+#nav .nav-list li {
+  padding: 0 5px;
+  height: 100%;
+  color: #333;
+}
+/* line 51, ../sass/_nav.scss */
+#nav form {
+  width: 296px;
+  height: 50px;
+  position: relative;
+}
+/* line 52, ../sass/_nav.scss */
+#nav form input {
+  outline: none;
+  border: 0;
+  border: 1px solid #b0b0b0;
+  background: transparent;
+}
+/* line 61, ../sass/_nav.scss */
+#nav form input[type="submit"] {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+/* line 69, ../sass/_nav.scss */
+#nav form input[type="text"] {
+  width: 247px;
+  height: 50px;
+}
+/* line 73, ../sass/_nav.scss */
+#nav form .iconfont {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #333;
+  text-align: center;
+  transition: 0.3s;
+}
+/* line 87, ../sass/_nav.scss */
+#nav form div:hover .iconfont {
+  background: #ff6700;
+  border-color: #ff6700;
+  color: #fff;
+}
+/* line 92, ../sass/_nav.scss */
+#nav form span {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 60px;
+  font-size: 12px;
+  color: #333;
+  background: #eee;
+  height: 18px;
+  padding: 0 5px;
+  line-height: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* line 106, ../sass/_nav.scss */
+#nav form span:last-child {
+  left: 150px;
+}
+/* line 109, ../sass/_nav.scss */
+#nav form span:hover {
+  color: #fff;
+  background: #ff6700;
+}
+/* line 114, ../sass/_nav.scss */
+#nav .nav-good {
+  background: #fff;
+  width: 100%;
+  height: 201px;
+  border-top: 1px solid #b0b0b0;
+  box-shadow: 0 3px 5px 1px #ccc;
+  display: none;
+}
+/* line 121, ../sass/_nav.scss */
+#nav .nav-good .nav-goods-content {
+  width: 1226px;
+  margin: 0 auto;
+  position: absolute;
+  top: 101px;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+}
+/* line 130, ../sass/_nav.scss */
+#nav .nav-good li {
+  width: 204px;
+  height: 201px;
+  padding: 35px 12px 0;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+/* line 138, ../sass/_nav.scss */
+#nav .nav-good a {
+  text-decoration: none;
+}
+/* line 141, ../sass/_nav.scss */
+#nav .nav-good img {
+  width: 160px;
+  height: 110px;
+}
+/* line 145, ../sass/_nav.scss */
+#nav .nav-good .title {
+  color: #333;
+}
+/* line 148, ../sass/_nav.scss */
+#nav .nav-good .price {
+  color: #ff6700;
+}
+/* line 151, ../sass/_nav.scss */
+#nav .nav-good li:after {
+  content: ' ';
+  width: 1px;
+  height: 100px;
+  background: #eee;
+  position: absolute;
+  top: 35px;
+  right: 0;
 }
 
 /* line 1, ../sass/_adv1.scss */
@@ -284,6 +468,106 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 77, ../sass/_adv1.scss */
 #adv1 a:first-child {
   margin-left: 0;
+}
+
+/* line 1, ../sass/_lunbot.scss */
+#lunbot {
+  height: 460px;
+  position: relative;
+}
+/* line 5, ../sass/_lunbot.scss */
+#lunbot .lunbot {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 9, ../sass/_lunbot.scss */
+#lunbot .lun-list {
+  width: 6130px;
+}
+/* line 11, ../sass/_lunbot.scss */
+#lunbot .lun-list img {
+  width: 1226px;
+  display: block;
+  float: left;
+}
+/* line 17, ../sass/_lunbot.scss */
+#lunbot .classify-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(100, 100, 100, 0.2);
+  height: 100%;
+  width: 234px;
+  padding: 20px 0;
+}
+/* line 25, ../sass/_lunbot.scss */
+#lunbot .classify-list .list {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 25px;
+}
+/* line 30, ../sass/_lunbot.scss */
+#lunbot .classify-list .list:hover {
+  background: #ff6700;
+}
+/* line 32, ../sass/_lunbot.scss */
+#lunbot .classify-list .list:hover .list-2F {
+  display: block;
+}
+/* line 36, ../sass/_lunbot.scss */
+#lunbot .classify-list .anchor-point {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* line 45, ../sass/_lunbot.scss */
+#lunbot .classify-list .iconfont {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+/* line 51, ../sass/_lunbot.scss */
+#lunbot .list-2F {
+  display: none;
+  width: 992px;
+  height: 460px;
+  position: absolute;
+  top: 0;
+  left: 234px;
+  background: white;
+  box-shadow: 0 0 5px 1px #ccc;
+}
+/* line 60, ../sass/_lunbot.scss */
+#lunbot .list-2F ul {
+  width: 248px;
+  height: 100%;
+  float: left;
+}
+/* line 65, ../sass/_lunbot.scss */
+#lunbot .list-2F li {
+  padding: 18px 20px;
+  width: 265px;
+  height: 76px;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+}
+/* line 73, ../sass/_lunbot.scss */
+#lunbot .list-2F li:hover {
+  color: #ff6700;
+}
+/* line 76, ../sass/_lunbot.scss */
+#lunbot .list-2F img {
+  vertical-align: middle;
+}
+/* line 79, ../sass/_lunbot.scss */
+#lunbot .list-2F span {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* line 1, ../sass/_section_1.scss */
@@ -1020,12 +1304,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
 }
 
-/* line 40, ../sass/index1.scss */
+/* line 41, ../sass/index1.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 44, ../sass/index1.scss */
+/* line 45, ../sass/index1.scss */
 .clear::after {
   content: ' ';
   display: block;
@@ -1033,9 +1317,4 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 0;
   visibility: hidden;
   clear: both;
-}
-
-/* line 53, ../sass/index1.scss */
-#lunbot {
-  background: #937;
 }

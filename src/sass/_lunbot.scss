@@ -1,0 +1,84 @@
+#lunbot{
+    @extend %box1;
+    height: 460px;
+    position: relative;
+    .lunbot{
+        width: 100%;
+        overflow: hidden;
+    }
+    .lun-list{
+        width: 6130px;
+        img{
+            width: 1226px;
+            display: block;
+            float: left;
+        }
+    }
+    .classify-list{//左侧列表
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(100, 100, 100,0.2);
+        height: 100%;
+        width: 234px;
+        padding: 20px 0;
+        .list{
+            height: 42px;
+            line-height: 42px;
+            padding: 0 25px;
+        }
+        .list:hover{
+            background: $font_color_orange;
+            .list-2F{
+                display: block;
+            }
+        }
+        .anchor-point{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: $font_color_white;
+            display: block;
+            text-decoration: none;
+            font-size: $font_size+2;
+        }
+        .iconfont{
+            position: absolute;
+            top: 3px;
+            right: 10px;
+        }
+    }
+    .list-2F{//弹出商品列表
+        display: none;
+        width: 992px;
+        height: 460px;
+        position: absolute;
+        top: 0;
+        left: 234px;
+        background: white;
+        box-shadow: 0 0 5px 1px #ccc;
+        ul{
+            width: 248px;
+            height: 100%;
+            float: left;
+        }
+        li{
+            padding: 18px 20px;
+            width: 265px;
+            height: 76px;
+            font-size: $font_size;
+            color: #333;
+            cursor: pointer;
+        }
+        li:hover{
+            color: $font_color_orange;
+        }
+        img{
+            vertical-align: middle;
+        }
+        span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
