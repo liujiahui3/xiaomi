@@ -361,13 +361,24 @@
     <!----------------------------------------- 轮播图 ------------------------------------------------>
     <div id="lunbot">
         <div class="lunbot">
-            <div class="lun-list">
+            <div class="lun-list clear">
                 <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/92414c58911542d3845113b11f6789de.jpg?w=2452&h=920" alt="">
                 <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fc7c5cc595e12203796678eedd9c4250.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
                 <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e45bcdea59448cd82360662a331409fc.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
                 <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a38b1d56409913d5dc869023ade36d94.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
                 <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/755aca9487082e7698e16f17cfb70839.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
             </div>
+            <div class="ollsit">
+                <ol class="clear">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+            </div>
+            <i class="iconfont icon-shangyiye"></i>
+            <i class="iconfont icon-fenye-xiayiye"></i>
         </div>
         <div class="classify-list">
             <ul>
@@ -1560,7 +1571,7 @@
 
     </div>
     <!----------------------------------------- 小米闪购 section_1 ------------------------------------------------>
-    <div id="section_1">
+    <div id="section_1" class="louceng">
         <div class="content">
             <div class="top">
                 <div class="title">
@@ -1677,7 +1688,7 @@
         </a>
     </div>
     <!----------------------------------------- 手机 section_2 ------------------------------------------------>
-    <div id="section_2">
+    <div id="section_2" class="louceng">
         <div class="content">
             <div class="top">
                 <div class="shouji">手机</div>
@@ -1802,7 +1813,7 @@
         </a>
     </div>
     <!----------------------------------------- 家电 section_3 ------------------------------------------------>
-    <div class="section_3">
+    <div class="section_3 louceng">
         <div class="content">
             <div class="top">
                 <div class="title_left">家电</div>
@@ -2039,7 +2050,7 @@
         </a>
     </div>
     <!----------------------------------------- 智能 section_4 ------------------------------------------------>
-    <div class="section_3">
+    <div class="section_3 louceng">
 
     </div>
     <!----------------------------------------- 广告类型2 ------------------------------------------------>
@@ -2050,7 +2061,7 @@
         </a>
     </div>
     <!----------------------------------------- 搭配 section_5 ------------------------------------------------>
-    <div class="section_3">
+    <div class="section_3 louceng">
 
     </div>
     <!----------------------------------------- 广告类型2 ------------------------------------------------>
@@ -2061,7 +2072,7 @@
         </a>
     </div>
     <!----------------------------------------- 配件 section_6 ------------------------------------------------>
-    <div class="section_3">
+    <div class="section_3 louceng">
 
     </div>
     <!----------------------------------------- 广告类型2 ------------------------------------------------>
@@ -2072,7 +2083,7 @@
         </a>
     </div>
     <!----------------------------------------- 周边 section_7 ------------------------------------------------>
-    <div class="section_3">
+    <div class="section_3 louceng">
 
     </div>
     <!----------------------------------------- 广告类型2 ------------------------------------------------>
@@ -2133,9 +2144,22 @@
     <div id="footer">
 
     </div>
+    <!-- ------------------   楼梯------------------------ -->
+    <div id="stairs">
+        <ul>
+            <li class="orange">闪购</li>
+            <li>手机</li>
+            <li>家电</li>
+            <li>智能</li>
+            <li>搭配</li>
+            <li>配件</li>
+            <li>周边</li>
+            <li>顶部</li>
+        </ul>
+    </div>
     <script src="./script/jquery.js"></script>
+    <script src="./script/index.js"></script>
     <script>
-        $('#header').load('./header.html');
         $('#footer').load('./footer.html');
         $section_3 = $('.section_3');
         $section_3.each(function (index, element) {

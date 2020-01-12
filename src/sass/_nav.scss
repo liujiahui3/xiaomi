@@ -46,6 +46,9 @@
             padding: 0 5px;
             height: 100%;
             color: #333;
+            height: 100px;
+            line-height: 100px;
+            cursor: pointer;
         }
         li:hover{
             color: $font_color_orange;
@@ -120,14 +123,16 @@
         border-top: 1px solid $font_color_gary;
         box-shadow: 0 3px 5px 1px #ccc;
         position: absolute;
-        top: 101px;
+        top: 100px;
         left: 0;
         z-index: 10;
+        display: none;
+        height: 201px;
         .nav-goods-content{
             width: 1226px;
             margin: 0 auto;
-            display: none;
             background: $font_color_white;
+            display: none;
         }
         li{
             width: 204px;

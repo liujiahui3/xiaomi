@@ -34,6 +34,9 @@
             width: 316px;
             background: white;
             position: absolute;
+            z-index: 100;
+            font-size: $font_size;
+            box-shadow: 0 0 5px 1px #ccc;
             top:40px;
             right: 0;
             line-height: 100px;
@@ -58,12 +61,13 @@
     }
     .erweima{//下载二维码
         position: relative;
-        >div{
-            // display: none;
+        &>div{
+            display: none;
             width: 124px;
-            height: 0;
-            visibility: hidden;
+            height: 148px;
+            box-shadow: 0 0 5px 1px #ccc;
             position: absolute;
+            z-index: 100;
             top: 40px;
             left: -34px;
             padding: 17px;

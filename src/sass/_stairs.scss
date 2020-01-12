@@ -1,0 +1,32 @@
+#stairs{
+    position: fixed;
+    right: 10px;
+    top: calc(50% - 135px);
+    cursor: pointer;
+    border: 1px solid #ccc;
+    li{
+        width: 40px;
+        height: 30px;
+        border-top: 1px solid #ccc;
+        background: $font_color_white;
+        text-align: center;
+        line-height: 30px;
+        font-size: $font-size;
+        transition: 0.3s;
+        color: #333;
+        &:first-child{
+            border: 0;
+        }
+        &:nth-child(-n+7):hover{
+            background: $font_color_orange;
+            color: $font_color_white;
+        }
+        &:last-child{
+            color:$font_color_orange;
+        }
+    }
+    .orange{
+        background:$font_color_orange;
+        color: $font_color_white;
+    }
+}

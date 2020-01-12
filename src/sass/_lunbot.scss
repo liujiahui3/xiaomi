@@ -11,14 +11,68 @@
         img{
             width: 1226px;
             display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            &:first-child{
+                display: block;
+            }
+        }
+    }
+    
+    .lunbot {
+        .iconfont{//左右切换按钮
+            position: absolute;
+            width: 41px;
+            height: 69px;
+            top: 220px;
+            display: block;
+            font-size: 34px;
+            line-height: 69px;
+            text-align: center;
+            color: #ccc;
+            &:hover{
+                color: $font_color_white;
+                background: rgba(141, 38, 38, 0.5);
+            }
+        }
+        .icon-fenye-xiayiye{
+            right: 0;
+        }
+        
+    }
+    .icon-shangyiye{
+        left: 234px;
+    }
+
+    .ollsit{//轮播图右下按钮
+        position: absolute;
+        bottom: 20px;
+        right: 35px;
+        li{
             float: left;
+            background: #666;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px 1px #333;
+            margin: 0 3px;
+            padding: 2px;
+            cursor: pointer;
+            &:first-child{
+                background: #aaa;
+            }
+            &:hover{
+                background: #aaa;
+            }
         }
     }
     .classify-list{//左侧列表
         position: absolute;
         top: 0;
         left: 0;
-        background: rgba(100, 100, 100,0.2);
+        background: rgba(100, 100, 100,0.5);
         height: 100%;
         width: 234px;
         padding: 20px 0;
