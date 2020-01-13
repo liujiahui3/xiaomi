@@ -83,14 +83,20 @@
     .bottom{
         display: flex;
         flex-direction: row;
+        .ov{
+            width: 978px;
+            height: 340px;
+            overflow: hidden;
+            margin-left: 14px;
+            position: relative;
+        }
     }
     ul{//商品列表
         display: flex;
+        position: absolute;
         flex-direction: row;
         width: 978px;
         height: 340px;
-        margin-left: 14px;
-        overflow: hidden;
         font-size: $font_size+2;
         a{
             display: flex;

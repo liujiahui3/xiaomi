@@ -746,17 +746,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: flex;
   flex-direction: row;
 }
-/* line 87, ../sass/_section_1.scss */
+/* line 86, ../sass/_section_1.scss */
+#section_1 .bottom .ov {
+  width: 978px;
+  height: 340px;
+  overflow: hidden;
+  margin-left: 14px;
+  position: relative;
+}
+/* line 94, ../sass/_section_1.scss */
 #section_1 ul {
   display: flex;
+  position: absolute;
   flex-direction: row;
   width: 978px;
   height: 340px;
-  margin-left: 14px;
-  overflow: hidden;
   font-size: 14px;
 }
-/* line 95, ../sass/_section_1.scss */
+/* line 101, ../sass/_section_1.scss */
 #section_1 ul a {
   display: flex;
   flex-direction: column;
@@ -769,13 +776,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 14px;
   border-top: solid 1px #6d3;
 }
-/* line 107, ../sass/_section_1.scss */
+/* line 113, ../sass/_section_1.scss */
 #section_1 ul img {
   width: 160px;
   height: 160px;
   margin: 0 37px 22px;
 }
-/* line 112, ../sass/_section_1.scss */
+/* line 118, ../sass/_section_1.scss */
 #section_1 ul h3 {
   color: #333;
   width: 190px;
@@ -787,17 +794,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-/* line 119, ../sass/_section_1.scss */
+/* line 125, ../sass/_section_1.scss */
 #section_1 ul .title {
   font-size: 12px;
   margin-bottom: 16px;
   color: #b0b0b0;
 }
-/* line 124, ../sass/_section_1.scss */
+/* line 130, ../sass/_section_1.scss */
 #section_1 ul .xianjia {
   color: #fa6509;
 }
-/* line 127, ../sass/_section_1.scss */
+/* line 133, ../sass/_section_1.scss */
 #section_1 ul .yuanjia {
   text-decoration: line-through;
   color: #b0b0b0;
