@@ -175,7 +175,7 @@
             this.louceng.each((index, element) => {
                 if($(window).scrollTop()>500){
                     this.stairs.show();
-                    if ($(element).offset().top >= $(window).scrollTop()) {
+                    if ($(element).offset().top+250 >= $(window).scrollTop()) {
                         this.louti.removeClass('orange');
                         this.louti.eq(index).addClass('orange');
                         return false;
@@ -187,12 +187,12 @@
 
         }
     }
-    $('#footer').load('./footer.html');
     $('#header').load('./header.html', () => {//载入头部
         $('#nav').load('./nav.html',()=>{//载入导航栏
             new Header().init();//为它们添加效果
         })
     });
+    $('#footer').load('./footer.html');
     new LunbotFade().init();
     new LunbotSeamless().init();
     new Stairs().init();

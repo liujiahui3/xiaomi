@@ -1,0 +1,83 @@
+#content{
+    width: 1000px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+body{
+    margin: 0;
+    background: #f9f9f9;
+}
+#content img{
+    background: #ff6700;
+}
+#content input[type="text"]{
+    width: 332px;
+    height: 44px;
+    border: 0;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 5px;
+}
+#content input[type="text"]::placeholder{
+    font-size: 14px;
+}
+h2{
+    font-weight: 100;
+    font-size: 30px;
+}
+form div{
+    margin: 10px 0;
+}
+#content p {
+    font-size: 12px;
+    color: #666;
+}
+#content label{
+    display: block;
+    margin: 5px 0;
+}
+#content .tishi{
+    color: #ff6666;
+    height:30px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+#content input[type="submit"]{
+    background: #ff6700;
+    color: #fff;
+    border: 0;
+    width: 340px;
+    height: 40px;
+}
+#content input[type="submit"]:hover{
+    opacity: 0.8;
+}
+.xieyi{
+    width:  330px ;
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.xieyi span{
+    color: #333;
+}
+#yewei{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+#yewei a{
+    color: #666;
+}
+#yewei p{
+    color: #666;
+}

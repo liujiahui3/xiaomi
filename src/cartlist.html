@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    
+    <title>购物车</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1512738_skbaroeqpbc.css">
+    <link rel="stylesheet" href="./stylesheets/index1.css">
+    <link rel="stylesheet" href="./stylesheets/cartlist.css">
 </head>
+
 <body>
+    <div id="header">
+
+    </div>
+    <div id="nav"></div>
+
+    <div id="bg">
+        <div id="goodlist">
+            <div class="top">
+                <input type="checkbox">
+                <div class="all-check">全选</div>
+                <div class="list-name">商品名称</div>
+                <div class="list-price">单价</div>
+                <div class="list-num">数量</div>
+                <div class="xiaoji">小计</div>
+                <div class="remove">操作</div>
+            </div>
+            <!-- <div class="bottom">
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1525316923.85218860.jpg?thumb=1&w=80&h=80" alt="">
+                        <div class="list-name">小米净水器滤芯 后置活性炭 白色</div>
+                        <div class="list-price">单价</div>
+                        <div class="list-num">数量</div>
+                        <div class="xiaoji">小计</div>
+                        <i class="iconfont icon-cuo"></i>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </div>      
     
+
+
+
+    <div id="footer"></div>
+    <script src="./script/jquery.js"></script>
+    <script>
+        $('#header').load('./header.html');
+        $('#nav').load('./nav.html');
+        $('#footer').load('./footer.html');
+    </script>
 </body>
+
 </html>
