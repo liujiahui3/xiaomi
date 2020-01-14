@@ -45,6 +45,9 @@
     ul{//右侧商品列表
         float: right;
         width: 992px;
+        a{
+            display: block;
+        }
         li:nth-child(-n+4){
             margin-bottom: 14px;
         }

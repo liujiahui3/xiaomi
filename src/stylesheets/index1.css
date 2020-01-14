@@ -874,10 +874,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 992px;
 }
 /* line 48, ../sass/_section_2.scss */
+#section_2 ul a {
+  display: block;
+}
+/* line 51, ../sass/_section_2.scss */
 #section_2 ul li:nth-child(-n+4) {
   margin-bottom: 14px;
 }
-/* line 51, ../sass/_section_2.scss */
+/* line 54, ../sass/_section_2.scss */
 #section_2 ul li {
   width: 234px;
   height: 300px;
@@ -888,17 +892,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   font-size: 14px;
 }
-/* line 61, ../sass/_section_2.scss */
+/* line 64, ../sass/_section_2.scss */
 #section_2 ul a {
   text-decoration: none !important;
 }
-/* line 64, ../sass/_section_2.scss */
+/* line 67, ../sass/_section_2.scss */
 #section_2 ul img {
   width: 160px;
   height: 160px;
   margin: 0 37px 21px;
 }
-/* line 69, ../sass/_section_2.scss */
+/* line 72, ../sass/_section_2.scss */
 #section_2 ul h3 {
   color: #333;
   height: 20px;
@@ -908,16 +912,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
 }
-/* line 74, ../sass/_section_2.scss */
+/* line 77, ../sass/_section_2.scss */
 #section_2 ul .title {
   margin-bottom: 16px;
   color: #b0b0b0;
 }
-/* line 78, ../sass/_section_2.scss */
+/* line 81, ../sass/_section_2.scss */
 #section_2 ul .xianjia {
   color: #fa6509;
 }
-/* line 81, ../sass/_section_2.scss */
+/* line 84, ../sass/_section_2.scss */
 #section_2 ul .yuanjia {
   text-decoration: line-through;
   color: #b0b0b0;
