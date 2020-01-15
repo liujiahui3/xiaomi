@@ -22,7 +22,7 @@
 #bg .top .all-check{
     height: 70px;
     line-height: 70px;
-    width: 80px;
+    width: 90px;
 }
 #bg .bottom div{
     display: inline-block;
@@ -30,7 +30,7 @@
     height: 70px;
     line-height: 70px;
 }
-#bg  input{
+#bg  input[type="checkbox"]{
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -53,10 +53,13 @@
     line-height: 70px;
 }
 #bg .list-num{
-    width: 130px;
-    padding-right: 18px;
+    width: 50px;
+    height: 30px;
     text-align: center;
     color: #424242;
+}
+#bg .long{
+    width: 125px;
 }
 #bg .list-price{
     width: 170px;
@@ -75,13 +78,74 @@
     height: 70px;
     vertical-align: middle;
 }
+
 #bg .bottom li{
     height: 117px;
     padding: 17px 0;
     font-size: 14px;
 }
+
+#bg .bottom li span{
+    font-size: 14px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+input[type="text"]{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 #bg .bottom .iconfont:hover{
     background: red;
     color: #fff;
     border-radius: 50%;
+}
+#total-prices{
+    width: 1226px;
+    margin: 20px auto ;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+#total-prices div:nth-child(1){
+    color: #999;
+    font-size: 12px;
+    width: 56px;
+}
+#total-prices div:nth-child(2){
+    color: #999;
+    font-size: 12px;
+    width: 226px;
+}
+#total-prices div:nth-child(2) span{
+    color: #f25807;
+    font-size: 12px;
+    
+}
+#total-prices div:nth-child(3){
+    color: #f25807;
+    font-size: 12px;
+    width: 239px;
+    margin-left: 450px;
+    margin-right: 51px;
+}
+#total-prices div:nth-child(3) span{
+    color: #f25807;
+    font-size: 30px;
+}
+#total-prices div:nth-child(4){
+    color: #fff;
+    font-size: 16px;
+    background: #f25807;
+    width: 200px;
 }

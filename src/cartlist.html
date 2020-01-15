@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1512738_skbaroeqpbc.css">
-    <link rel="stylesheet" href="./stylesheets/index1.css">
-    <link rel="stylesheet" href="./stylesheets/cartlist.css">
+    <!-- <link rel="stylesheet" href="./stylesheets/index1.css">
+    <link rel="stylesheet" href="./stylesheets/cartlist.css"> -->
 </head>
 
 <body>
@@ -20,41 +20,34 @@
     <div id="bg">
         <div id="goodlist">
             <div class="top">
-                <input type="checkbox">
+                <input type="checkbox" checked="true">
                 <div class="all-check">全选</div>
                 <div class="list-name">商品名称</div>
                 <div class="list-price">单价</div>
-                <div class="list-num">数量</div>
+                <div class="list-num long">数量</div>
                 <div class="xiaoji">小计</div>
                 <div class="remove">操作</div>
             </div>
             <div class="bottom">
-                <ul>
-                    <!-- <li>
-                        <input type="checkbox">
-                        <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1525316923.85218860.jpg?thumb=1&w=80&h=80" alt="">
-                        <div class="list-name">小米净水器滤芯 后置活性炭 白色</div>
-                        <div class="list-price">单价</div>
-                        <div class="list-num">数量</div>
-                        <div class="xiaoji">小计</div>
-                        <i class="iconfont icon-cuo"></i>
-                    </li> -->
-                    
+                <ul>   
                 </ul>
             </div>
         </div>
+        <div id="total-prices">
+            <div>继续购物</div>|
+            <div>共 <span class="gong">0</span> 件商品，已选择 <span class="yixuan">0</span> 件</div>
+            <div>合计:<span class="heji">0</span>元</div>
+            <div>去结算</div>
+        </div>
     </div>      
     
+  
 
 
 
     <div id="footer"></div>
-    <script src="./script/jquery.js"></script>
-    <script>
-        $('#header').load('./header.html');
-        $('#nav').load('./nav.html');
-        $('#footer').load('./footer.html');
-    </script>
+    <script src="main.js" id="cartlist"></script>
+    
 </body>
 
 </html>

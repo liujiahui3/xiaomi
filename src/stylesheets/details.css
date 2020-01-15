@@ -355,6 +355,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       width: 800px;
       height: 800px;
   }
+  #container .bf .bpic{
+      width: 800px;
+      height: 800px;
+      position: absolute;
+      z-index: 1000;
+  }
   #right{
       position: absolute;
       left: 550px;
@@ -404,4 +410,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   #right .serve i{
       padding: 5px;
       line-height: 30px;
+  }
+  .sf{
+      display: none;
+      background: orange;
+      opacity: 0.5;
+      position: absolute;
   }

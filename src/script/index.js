@@ -186,22 +186,44 @@ class Stairs {
 
     }
 }
+//tab切换
+class Tab{
+    constructor(){
+        this.btns = $('.section_3 .list-cut li');
+        this.listUl = $('.section_3 .list-goods');
+    }
+    init(){
+        let _this = this;
+        this.btns.hover(function(){
+            $(this)
+            .parents('.section_3')
+            .find('.list-cut li')
+            .removeClass('hove');//去除类名
+            $(this).addClass('hove');//移入元素家类名
+
+            $(this).
+            parents('.section_3')
+            .find('.list-goods')
+            .removeClass('show');//去除所有列表的类名
+            $(this).parents('.section_3')
+            .find('.list-goods')
+            .eq($(this).index())
+            .addClass('show');//对应列表添加类名
+        })
+    }
+}
 
 
-    
-    // class Tab{
-    //     constructor(){
-    //         this.btns = $('')
-    //     }
-    // }
-    function result_index(){
+
+class result_index{
+    init(){
         new Header().init();
         new LunbotFade().init();
         new LunbotSeamless().init();
         new Stairs().init();
+        new Tab().init();
     }
-    export {
-        result_index
-    }
-    
-
+}
+export{
+    result_index
+}

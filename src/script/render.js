@@ -15,10 +15,11 @@ class Render {
             dataType:'json'
         }).done(
             (data)=>{
+                let url = location.href;
                 this.phoneLi.each(
                     (index,element)=>{
                         $(element).html(`
-                        <a href="http://10.31.152.32/xiaomi/src/details.html">
+                        <a href="http://10.31.152.32/xiaomi/dist/details.html?sid=${data[index].sid}">
                             <img src="${data[index].url}"
                                 alt="">
                             <h3>${data[index].title}</h3>
@@ -35,8 +36,6 @@ class Render {
         )
     }
 }
-    
-
 
 
 export {
