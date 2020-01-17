@@ -4,6 +4,10 @@ class Fdj {
         this.sf = $('.sf');
         this.bpic = $('.bpic');
         this.bf = $('.bf');
+        this.ul = $('.overflow ul');
+        this.left = $('.icon-shangyiye');
+        this.right = $('.icon-fenye-xiayiye');
+        this.num = 4;
     }
     init() {
         this.bili = this.bpic.outerWidth() / this.spic.outerWidth();
@@ -39,6 +43,27 @@ class Fdj {
             this.sf.hide();
             this.bf.hide();
         })
+        this.right.on('click',()=>{
+            let lilength = $('.overflow li').length;
+            if(this.num<lilength){
+                this.ul.stop().animate({
+                    left:-$('.overflow li').outerWidth(true)
+                },()=>{
+                    this.num++;
+                })
+            }
+        });
+        this.left.on('click',()=>{
+            let lilength = $('.overflow li').length;
+            if(this.num>=lilength){
+                this.ul.stop().animate({
+                    left:0
+                },()=>{
+                    this.num--;
+                })
+            }
+        });
+        
     }
 }
 

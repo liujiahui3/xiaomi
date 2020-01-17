@@ -8,8 +8,10 @@ class Detalist {
         this.price = $('#right .price');
         this.join = $('#right .join');
         this.num = $('#right .num');
+        this.list = $('.details_list ul');
     }
     init() {
+        let _this = this;
         $.ajax('http://10.31.152.32/xiaomi/php/detalist.php', {
             data: {
                 sid: this.url.substr(-1)
@@ -20,6 +22,16 @@ class Detalist {
             this.describe.html(d.describe);
             this.title.html(d.title);
             this.price.html(d.cprice);
+            this.list.html(`
+                <li><img src="${d.urls.split(',')[0]}"></li>
+                <li><img src="${d.urls.split(',')[1]}"></li>
+                <li><img src="${d.urls.split(',')[2]}"></li>
+                <li><img src="${d.urls.split(',')[3]}"></li>
+                <li><img src="${d.urls.split(',')[4]}"></li>
+            `);
+            $('.overflow li img').on('click',function(){
+                _this.img.attr('src',$(this).attr('src'));
+            })
         });
         this.num.val(1);
         this.num.on('input',()=>{
@@ -59,7 +71,7 @@ class Detalist {
             }else{
                 alert('数量不能为空');
             }
-        })
+        });
     }
 }
 

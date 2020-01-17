@@ -417,3 +417,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
       opacity: 0.5;
       position: absolute;
   }
+  .details_list li{
+    float: left;
+    margin-left: 5px;
+  }
+  .details_list ul{
+    width: 525px;
+    position: absolute;
+  }
+  .details_list li:first-child{
+    margin-left: 0;
+  }
+  .details_list li img{
+    width: 100px;
+    height: 100px;
+  }
+  .details_list .overflow{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:415px;
+    height: 102px;
+    overflow: hidden;
+  }
+  .details_list{
+    position: absolute;
+    top: 420px;
+    left:0px;
+  }
+  .details_list .icon-shangyiye{
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    font-size: 30px;
+    height: 100px;
+    background: #efefef;
+    line-height: 100px;
+  }
+  .details_list .icon-fenye-xiayiye{
+    position: absolute;
+    top: 0px;
+    left: 415px;
+    font-size: 30px;
+    height: 100px;
+    line-height: 100px;
+    background: #efefef;
+  }

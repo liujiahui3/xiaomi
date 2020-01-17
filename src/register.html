@@ -4,34 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登陆</title>
-    <link rel="stylesheet" href="./stylesheets/register.css">
+    <title>注册</title>
 </head>
 <body>
     <div id="content">
         <img src="./images/mi-logo.png" alt="">
         <h2>注册小米帐号</h2>
-        <form action="#" method="POST">
+        <form action="http://10.31.152.32/xiaomi/php/register.php" method="POST">
             <div>
-                <label for="state">用户名</label>
-                <input type="text" placeholder="请输入用户名" id="state">
+                <label for="username">用户名</label>
+                <input type="text" placeholder="请输入用户名" id="username" name="username">
                 <p>成功注册帐号后，用户名将不能被修改</p>
             </div>
             <div>
-                <label for="state">手机号码</label>
-                <input type="text" placeholder="请输入手机号码" id="state">
+                <label for="userphone">手机号码</label>
+                <input type="text" placeholder="请输入手机号码" id="userphone" name="userphone">
             </div>
             <div>
-                <label for="state">密码</label>
-                <input type="text" placeholder="请输入密码" id="state">
+                <label for="password">密码</label>
+                <input type="password" type="text" placeholder="请输入密码" id="password" name="password">
             </div>
             <div>
-                <label for="state">邮箱</label>
-                <input type="text" placeholder="请输入邮箱" id="state">
+                <label for="email">邮箱</label>
+                <input type="text" placeholder="请输入邮箱" id="email" name="email">
             </div>
             <p class="tishi"></p>
             <div>
-                <input type="submit" value="立即注册">
+                <input type="submit" value="立即注册" name="submit">
             </div>
             <div class="xieyi">
                 已阅读并同意：小米 <span>用户协议</span> 和 <span>隐私政策</span>
@@ -50,5 +49,6 @@
         </div>
         <p>小米公司版权所有-京ICP备10046444-京公网安备11010802020134号-京ICP证110507号</p>
     </div>
+    <script src="script/main.js" id="register"></script>
 </body>
 </html>
