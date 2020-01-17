@@ -55,6 +55,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             disableScript: true,
+            title: "小米商城详情页",
             filename: 'details.html',
             chunks: ['main'],
             template: 'src/details.html',
@@ -65,6 +66,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             disableScript: true,
+            title: "小米商城购物车",
             filename: 'cartlist.html',
             chunks: ['main'],
             template: 'src/cartlist.html',
@@ -75,6 +77,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             disableScript: true,
+            title: "小米商城登陆",
             filename: 'login.html',
             chunks: ['main'],
             template: 'src/login.html',
@@ -85,6 +88,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             disableScript: true,
+            title: "小米商城注册",
             filename: 'register.html',
             chunks: ['main'],
             template: 'src/register.html',

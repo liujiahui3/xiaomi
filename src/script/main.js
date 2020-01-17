@@ -42,6 +42,7 @@ import{
     Login
 }from './login';
 
+
 switch ($('script').attr('id')) {
     case 'index': new Render().init(
         result_H
@@ -58,6 +59,8 @@ switch ($('script').attr('id')) {
     break;
     case 'login': new Login().init();break;
 }
+
+
 
 
 
