@@ -12,21 +12,22 @@ class Header {
     init() {
         this.pullDown(this.app, this.erimg);//下载二维码
         this.pullDown(this.cart, this.cartGoods);//购物车下拉
-        this.pullDown(this.navList, this.navGoods);
+        this.pullDown(this.navList,this.navGoods);
     }
     pullDown(hov, obj) {//下拉效果
         // console.log(hov)
         let _this = this;
-        $(hov).hover(function () {
+        hov.hover(function () {
             obj.stop().slideDown(300);
-            _this.navContent.eq(hov.index(this)).show();
+            console.log(obj)
+            _this.navContent.hide();
+            _this.navContent.eq($(this).index()).show();
         },
-            function () {
-                obj.on('mouseout',()=>{
-                    obj.stop().slideUp(300);
-                    _this.navContent.eq(hov.index(this)).hide();
-                }) 
-            }
+        function () {
+            obj.hover(()=>{},()=>{
+                obj.stop().slideUp(300);
+            })
+        }
         );
     }
 }
